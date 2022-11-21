@@ -37,7 +37,7 @@ header{
     gap:10px;
 }
 .user{
-    width:calc(100%/7 - 10px);
+    width:200px;
     height:100px;
     background-image: url(https://picsum.photos/200/300);
     background-size: cover;
@@ -81,13 +81,25 @@ header{
 footer{
     width: 100%;
     height:60px;
-    background-color: orange;
+    background-color: #333;
     justify-content: space-between;
 }
 
-.blocco{
-    background-color: red;
+.icon{
+    background-color: #333;
+    height:100%;
+    padding:10px;
+    font-weight: bold;
+    color: white;
+    border: none;
 }
-.blocco div{
-    display: inline-block;
+footer div:nth-last-of-type(1) .icon{
+    background-color: rgb(97, 97, 97);
+    color:red;
+}
+footer div:nth-child(2) .icon:nth-of-type(4) > i{
+    color:green;
+}
+.small{
+    padding:10px 5px;
 }
